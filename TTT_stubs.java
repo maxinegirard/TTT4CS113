@@ -49,8 +49,36 @@ class TTT_stubs{
       return(0);  
    }
 
-
+   //this function puts the current players symbol on the game board
    static char[][] updateBoard(char [][] db, int ch, char sym){
+      if(ch==0){
+         db[0][0]=sym;
+      }//close if
+      else if(ch==1){
+         db[0][2]=sym;
+      }//close else if
+      else if(ch== 2){
+         db[0][4]=sym;
+      }//close else if
+      else if(ch==3){
+         db[2][0]=sym;
+      }//close else if
+      else if(ch==4){
+         db[2][2]=sym;
+      }//close else if
+      else if(ch==5){
+         db[2][4]=sym;
+      }//close else if
+      else if(ch==6){
+         db[4][0]=sym;
+      }//close else if
+      else if(ch==7){
+         db[4][2]=sym;
+      }//close else if
+      else{
+         db[4][4]=sym;
+      }//close else
+   //return the adjusted gameboard
       return (db);
    }
    
